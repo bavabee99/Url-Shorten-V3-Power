@@ -15,7 +15,7 @@ START_MESSAGE = '''Hello, {}
 
 I'm a Bot to Convert Other TamizhMasters Links to your TamizhMasters Links or Short Other Links to Shortener Website Links by Using your API. 
 
-Just Send me Any Post with Mdisk or Other Links. I will Convert Those Links Using Your API and Send them Back To You. I work in Channels too. 
+Just Send me Any Post with TamizhMasters or Other Links. I will Convert Those Links Using Your API and Send them Back To You. I work in Channels too. 
 
 Hit /help for more information about this Bot
 
@@ -50,16 +50,16 @@ If you have any bugs or questions on how to use me, have a look at my [website](
 
 Available commands:
 
-- /shortener_api
-- /mdisk_api
-- /header
-- /footer
-- /username
-- /banner_image
-- /me
-- /base_site
-- /include_domain
-- /exclude_domain
+- /api - `Api Command Can Support All Type Of Shortener Websites`
+- /mdisk_api - `You Can Use Also Mdisk Api`
+- /header - `Header Message`
+- /footer - `Footer Message`
+- /username - `Admin Cmd `
+- /banner_image - `Admin Cmd`
+- /me - `Check Your Info`
+- /base_site `Admin Cmd`
+- /include_domain - `Admin Cmd`
+- /exclude_domain - `Admin Cmd`
 
 Use the commands to know more about the same
 
@@ -73,9 +73,9 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
-`📢 Support:` [Talk Bot](https://t.me/t2linkspromotion_bot)
-`🌐 Source Code:` [GitHub](https://github.com/T2links)
+`👨‍💻 Developer:` [Dev](t.me/HMF_Owner_1)
+`📢 Support:` [HangOverXD](https://t.me/HangOverXD)
+`🌐 Source Code:` [GitHub](https://github.com/ThiruXD)
 """
 
 
@@ -83,8 +83,6 @@ METHOD_MESSAGE = """
 Current Method: {method}
     
 Methods Available:
-
-> `mdlink` - Change all the links of the post to your MDisk account first and then short to {shortener} link.
 
 > `shortener` - Short all the links of the post to {shortener} link directly.
 
@@ -160,7 +158,7 @@ START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
 
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('MDLINK', callback_data=f'change_method#mdlink'),
+        InlineKeyboardButton('TamizhMasters', callback_data=f'change_method#mdlink'),
         InlineKeyboardButton('Shortener', callback_data='change_method#shortener'),
         InlineKeyboardButton('Mdisk', callback_data='change_method#mdisk')
     ],
