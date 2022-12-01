@@ -40,16 +40,11 @@ I have lots of handy features, such as
 - Channel Support (Admin Only Use)
 - Convert forwarded posts (Admin Only Use)
 
-Helpful commands:
-
-- /start: Starts me! You've probably already used this.
-- /help: Sends this message; I'll tell you more about myself!
-- /batch -100xxx: To short or convert all posts of your channel
-
-If you have any bugs or questions on how to use me, have a look at my [website]({repo}), or contact to {owner}.
-
 Available commands:
 
+- /start - `To Start Bot`
+- /help - `To Check This Bot`
+- /batch - `100xxx: To short or convert all posts of your channel`
 - /api - `Api Command Can Support All Type Of Shortener Websites`
 - /mdisk_api - `You Can Use Also Mdisk Api`
 - /header - `Header Message`
@@ -60,8 +55,6 @@ Available commands:
 - /base_site `Admin Cmd`
 - /include_domain - `Admin Cmd`
 - /exclude_domain - `Admin Cmd`
-
-Use the commands to know more about the same
 
 Below are some features I provide'''
 
