@@ -12,13 +12,13 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID")) #API ID from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH") #API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("BOT_TOKEN") # Bot token from @BotFather
+API_ID = int(os.environ.get("API_ID", "9840531")) #API ID from https://my.telegram.org/auth
+API_HASH = os.environ.get("API_HASH", "2ac10377616df23907e134df14bdf08b") #API Hash from https://my.telegram.org/auth
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5690405597:AAEkSm_mYAohbaEitlMKR5d5Z2bc6nradZw") # Bot token from @BotFather
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
-DATABASE_URL = os.environ.get("DATABASE_URL", None) # mongodb uri from https://www.mongodb.com/
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "BavaBee")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Bave999:Bave999@cluster0.1aheaa1.mongodb.net/?retryWrites=true&w=majority") # mongodb uri from https://www.mongodb.com/
 OWNER_ID =  int(os.environ.get("OWNER_ID")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
