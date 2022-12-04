@@ -14,7 +14,7 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = int(os.environ.get("API_ID", "9840531")) #API ID from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH", "2ac10377616df23907e134df14bdf08b") #API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5690405597:AAEkYAohbaEitlMKR5d5Z2bc6nradZw") # Bot token from @BotFather
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5690405597:AAEkSm_mYAohbaEitlMKR5d5Z2bc6nradZw") # Bot token from @BotFather
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "BavaBee")
@@ -28,7 +28,7 @@ UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", False) # For Force Subscriptio
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False) # true if forward should be avoided
 IS_PRIVATE = is_enabled(os.environ.get("IS_PRIVATE", 'False'), 'False') # true for private use and restricting users
 SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2") # for upstream repo
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://telegra.ph/file/cb80d63a806cb5cd30288.jpg') # image when someone hit /start
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://telegra.ph/file/62c695160dbb95cb6bd7c.jpg') # image when someone hit /start
 LINK_BYPASS = is_enabled((os.environ.get('LINK_BYPASS', "False")), False) # if true, droplink urls will be bypassed 
 BASE_SITE = os.environ.get("BASE_SITE", "tamizhmasters.com") # your shortener site domain
 
